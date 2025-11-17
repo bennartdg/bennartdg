@@ -10,7 +10,7 @@ export default function CardServices() {
       {services.map((service, index) => (
         <div
           key={index}
-          className="grid cursor-pointer border-b border-neutral-300 py-6 transition-colors duration-300"
+          className="grid cursor-pointer border-b border-soft py-6 transition-colors duration-300"
           onMouseEnter={() => setHovered(index)}
           onMouseLeave={() => setHovered(null)}
         >

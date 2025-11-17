@@ -20,7 +20,7 @@ export default function ProjectsList() {
           rel="noopener noreferrer"
         >
           <div
-            className="project-card border-b border-neutral-300"
+            className="project-card border-b border-soft"
             data-cursor-image={project.image}
           >
             <div

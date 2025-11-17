@@ -16,8 +16,7 @@ export default function Footer() {
       y: 0,
       opacity: 1,
       transition: {
-        // delay: i * 0.05, // build-up sequentially
-        delay: 0.05, // build-up sequentially
+        delay: 0.05,
         duration: 0.5,
         ease: "easeInOut",
       },
@@ -50,7 +49,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="order-1 hidden animate-pulse md:inline">
+            <div className="order-1 hidden md:inline">
               <BennartIcon w={24} h={24} />
             </div>
 

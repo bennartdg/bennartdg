@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import LogoLoop from "@/components/LogoLoop";
 import Nav from "@/components/Nav";
+import Statistic from "@/components/Statistic";
 import Title from "@/components/Title";
 
 import {
@@ -121,7 +122,7 @@ export default function Home() {
             <div className="flex flex-col justify-between gap-12">
               <p className="text-xl lg:text-3xl">
                 The name{"'"}s Bennart, Bennart Dem Gunawan. A passionate
-                <span className="font-semibold">{" "}Website</span> and{" "}
+                <span className="font-semibold"> Website</span> and{" "}
                 <span className="font-semibold">Mobile</span> Developer with
                 Computer Science graduate based in Bandung, Indonesia.
               </p>
@@ -134,24 +135,8 @@ export default function Home() {
                   Ozean.
                 </span>
               </p>
-              <div className="grid grid-cols-1 items-center justify-between gap-12 md:grid-cols-2 lg:flex lg:gap-0">
-                <div className="flex flex-col gap-2 text-center">
-                  <h1 className="text-4xl">2+</h1>
-                  <p>Years of experiences</p>
-                </div>
-                <div className="flex flex-col gap-2 text-center">
-                  <h1 className="text-4xl">3</h1>
-                  <p>Companies worked with</p>
-                </div>
-                <div className="flex flex-col gap-2 text-center">
-                  <h1 className="text-4xl">10+</h1>
-                  <p>Projects completed</p>
-                </div>
-                <div className="flex flex-col gap-2 text-center">
-                  <h1 className="text-4xl">20+</h1>
-                  <p>Technology & tools mastered</p>
-                </div>
-              </div>
+              
+              <Statistic />
             </div>
           </div>
         </div>
@@ -192,7 +177,7 @@ export default function Home() {
           <div className="col-span-4">
             <Title title="What I Do" />
           </div>
-          <div className="col-span-8 grid border-t border-neutral-300">
+          <div className="col-span-8 grid border-t border-soft">
             <CardServices />
           </div>
         </div>
@@ -204,7 +189,7 @@ export default function Home() {
         id="selectedwork"
       >
         <Title title="Selected Work" />
-        <div className="border-t border-neutral-300">
+        <div className="border-t border-soft">
           <CardProjects />
         </div>
       </section>

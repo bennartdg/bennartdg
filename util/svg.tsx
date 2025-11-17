@@ -678,16 +678,48 @@ export const JavaIcon = ({ w = 50, h = 50, color = "black" }: IconProps) => (
 
 export const BennartIcon = ({ w = "1em", h = "1em" }: IconProps) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
     width={w}
     height={h}
-    viewBox="0 0 1084 1084"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1000 1000"
+    version="1.1"
+    xmlSpace="preserve"
+    style={{
+      fillRule: "evenodd",
+      clipRule: "evenodd",
+      strokeLinejoin: "bevel",
+      strokeMiterlimit: 1.5,
+    }}
   >
-    <path
-      d="M540.971 0V540M1081.97 541H1.9707M11.4854 1070.51L1071.49 10.5147M1075.49 1075.49L8.48539 8.48518"
-      strokeWidth="24"
-    />
+    <g transform="matrix(1,0,0,1,-1045.584239,4.415761)">
+      <g transform="matrix(1.25,0,0,1.25,925,-125)">
+        <g transform="matrix(1,0,0,1,-0.810374,-1.418149)">
+          <path
+            d="M900.81,101.418L100.81,901.418"
+            style={{ fill: "none", strokeWidth: "10px" }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,-0.810374,-1.418149)">
+          <path
+            d="M100.81,101.418L900.81,901.418"
+            style={{ fill: "none", strokeWidth: "10px" }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,-0.810374,0)">
+          <path
+            d="M100.81,500L900.81,500"
+            style={{ fill: "none", strokeWidth: "10px" }}
+          />
+        </g>
+        <g transform="matrix(1,0,0,1,-0.810374,-1.418149)">
+          <path
+            d="M500.81,101.418L500.81,501.418"
+            style={{ fill: "none", strokeWidth: "10px" }}
+          />
+        </g>
+      </g>
+    </g>
   </svg>
 );
 
