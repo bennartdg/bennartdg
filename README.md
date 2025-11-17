@@ -129,9 +129,3 @@ Feel free to connect:
 * **Email:** [bennart.dgunawan@gmail.com](mailto:bennart.dgunawan@gmail.com)
 
 ---
-
-If you'd like, I can also generate:
-✅ A more creative version
-✅ A minimal corporate-style README
-✅ A version with preview images and GIFs
-Just let me know!
