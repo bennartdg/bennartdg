@@ -1,0 +1,42 @@
+[
+  {
+    "title": "REINFORCED",
+    "date": "Nov 2025",
+    "description": "Python Streamlit–based research recommendation system leveraging graph-structured data for intelligent collaboration insights.",
+    "type": "Web & Machine Learning–based",
+    "image": "/image/reinforced.png",
+    "href": "https://reinforced.streamlit.app/"
+  },
+  {
+    "title": "SPP StudioHub",
+    "date": "Jul 2025",
+    "description": "A user-friendly web application for managing studio rooms and assets, built with Laravel.",
+    "type": "Web Application",
+    "image": "/image/studio-hub.png",
+    "href": "https://studio-hub.itenas.ac.id/"
+  },
+  {
+    "title": "247GO Travel Ticket",
+    "date": "Aug 2024",
+    "description": "A travel ticket management platform for agents, enabling users to book trips anywhere through a low-code backend built with Node-RED and ETTER Cloud API Services.",
+    "type": "Web Application",
+    "image": "/image/247go.png",
+    "href": "https://ticket.247go.app/"
+  },
+  {
+    "title": "Mobile Super App",
+    "date": "Apr 2024",
+    "description": "A mobile super app built with React to streamline and centralize various administrative and service needs within the ministry.",
+    "type": "Mobile Application",
+    "image": "/image/superapps.png",
+    "href": "#"
+  },
+  {
+    "title": "HIMSI Website",
+    "date": "Dec 2024",
+    "description": "A simple and informative profile website for a student association, designed to showcase organizational identity and activities.",
+    "type": "Business Profile Web",
+    "image": "/image/himsi.png",
+    "href": "#"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Website Developer",
+    "description": "Designing and developing responsive, data-driven, and user-centered websites. Experienced in building scalable systems using frameworks like Laravel and integrating efficient backend architectures. Focused on creating digital solutions that balance performance, usability, and aesthetics."
+  },
+  {
+    "title": "Mobile Developer",
+    "description": "Building intuitive and high-performing mobile applications with frameworks such as React. Skilled in translating complex workflows into seamless mobile experiences while maintaining reliability and speed. Prioritizing accessibility and design consistency across platforms."
+  },
+  {
+    "title": "Machine Learning Engineer",
+    "description": "Developing intelligent systems that leverage machine learning and graph-based data structures to uncover patterns and generate recommendations. Experienced in data preprocessing, model optimization, and deploying ML-powered applications. Bridging research innovation with practical implementations."
+  }
+]
