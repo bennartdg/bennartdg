@@ -117,6 +117,7 @@ export default function Home() {
               height={380}
               src={"/image/me.jpg"}
               alt="Image Me"
+              loading="eager"
               className={`w-full object-cover brightness-60 grayscale transition-all duration-500 hover:brightness-100 hover:grayscale-0`}
             />
             <div className="flex flex-col justify-between gap-12">

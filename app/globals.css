@@ -9,11 +9,13 @@
 [data-theme="light"] {
   --background: #f8fbf8;
   --foreground: #0a0a0a;
+  --border-soft: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #f8fbf8;
+  --border-soft: rgba(255, 255, 255, 0.15);
 }
 
 [data-theme="dark"] .custom-cursor {
@@ -140,14 +142,6 @@ body,
 svg path {
   stroke: var(--foreground);
   transition: stroke 0.3s ease, fill 0.3s ease;
-}
-
-[data-theme="light"] {
-  --border-soft: rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="dark"] {
-  --border-soft: rgba(255, 255, 255, 0.15);
 }
 
 .border-soft {
