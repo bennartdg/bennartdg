@@ -1,7 +1,3 @@
-Here’s a clean, professional, and well-structured **README.md** for your portfolio project — written in English and suitable for GitHub.
-
----
-
 # **BENNART — Personal Portfolio Website**
 
 A modern, minimalistic, and motion-driven personal portfolio built with **Next.js**, **Framer Motion**, and **Tailwind CSS**.
