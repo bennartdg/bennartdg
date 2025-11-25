@@ -10,11 +10,11 @@ export default function ProjectsList() {
 
   return (
     <div className="space-y-4">
-      {projects.map((project, i) => (
+      {projects.map((project, index) => (
         <Link
-          key={i}
+          key={project.id}
           href={project.href}
-          onMouseEnter={() => setHovered(i)}
+          onMouseEnter={() => setHovered(index)}
           onMouseLeave={() => setHovered(null)}
           target="_blank"
           rel="noopener noreferrer"
@@ -25,7 +25,7 @@ export default function ProjectsList() {
           >
             <div
               className={` grid grid-cols-1 items-center py-6 transition-all duration-500 ease-out md:grid-cols-4 ${
-                hovered !== null && hovered !== i ? "opacity-10" : "opacity-100"
+                hovered !== null && hovered !== index ? "opacity-10" : "opacity-100"
               }`}
             >
               <div className="mb-6 w-full md:hidden">
@@ -35,6 +35,7 @@ export default function ProjectsList() {
                   src={project.image}
                   alt="Preview"
                   className="h-full w-full object-cover"
+                  loading="eager"
                 />
               </div>
               <div className="col-span-2 mb-6 md:mb-0">
@@ -49,7 +50,7 @@ export default function ProjectsList() {
                   strokeLinejoin="miter"
                   size={32}
                   className={`transition-transform duration-500 ease-out ${
-                    hovered === i
+                    hovered === index
                       ? "scale-110 -rotate-45"
                       : "scale-100 rotate-0"
                   }`}

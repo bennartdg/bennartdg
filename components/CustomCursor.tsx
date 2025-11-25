@@ -28,10 +28,8 @@ export default function CustomCursor() {
       setIsCardMode(false);
     };
 
-    // Tangani movement
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Tangani hover ke elemen project-card
     const cards = document.querySelectorAll(".project-card");
     cards.forEach((card) => {
       card.addEventListener("mouseenter", handleMouseEnterCard);
@@ -64,6 +62,7 @@ export default function CustomCursor() {
             height={280}
             src={hoverImage}
             alt="Preview"
+            loading="eager"
             className="animate-fadeIn h-full w-full transition-transform duration-500 ease-out hover:scale-105"
           />
         </div>

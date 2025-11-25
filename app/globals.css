@@ -9,13 +9,13 @@
 [data-theme="light"] {
   --background: #f8fbf8;
   --foreground: #0a0a0a;
-  --border-soft: rgba(0, 0, 0, 0.1);
+  --soft: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="dark"] {
   --background: #0a0a0a;
   --foreground: #f8fbf8;
-  --border-soft: rgba(255, 255, 255, 0.15);
+  --soft: rgba(255, 255, 255, 0.15);
 }
 
 [data-theme="dark"] .custom-cursor {
@@ -60,6 +60,14 @@ body {
   background-color: var(--background);
 }
 
+.text-background {
+  color: var(--background);
+}
+
+.text-foreground {
+  color: var(--foreground);
+}
+
 .font-serif {
   font-family: var(--font-noto-serif), serif;
 }
@@ -81,12 +89,6 @@ body,
   transform: translate(-50%, -50%);
   z-index: 9999;
   mix-blend-mode: difference;
-  transition:
-    width 0.25s ease,
-    height 0.25s ease,
-    border-radius 0.25s ease,
-    background-color 0.25s ease,
-    transform 0.05s ease-out;
 }
 
 .custom-cursor.card {
@@ -139,11 +141,17 @@ body,
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-svg path {
+#bennart-icon path {
   stroke: var(--foreground);
-  transition: stroke 0.3s ease, fill 0.3s ease;
+  transition:
+    stroke 0.3s ease,
+    fill 0.3s ease;
 }
 
 .border-soft {
-  border-color: var(--border-soft);
+  border-color: var(--soft);
+}
+
+.text-soft {
+  color: var(--soft)
 }

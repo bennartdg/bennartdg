@@ -3,6 +3,7 @@
 import { motion, useInView, Variants } from "framer-motion";
 import { useRef } from "react";
 import { BennartIcon } from "@/util/svg";
+import Section from "./Section";
 
 export default function Footer() {
   const ref = useRef(null);
@@ -26,7 +27,7 @@ export default function Footer() {
   return (
     <footer className="mt-52" ref={ref}>
       <div className="pb-6">
-        <section className="mx-4 grid max-w-7xl gap-6 pt-20 xl:mx-auto">
+        <Section className="grid gap-6">
           <h1 className="flex justify-between overflow-hidden text-[9vw] leading-none font-semibold">
             {text.map((char, i) => (
               <motion.span
@@ -45,7 +46,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:place-items-center">
             <div className="order-2 w-full md:order-1">
               <p className="md:place-self-start">
-                &copy; 2025 BENNART DEM GUNAWAN
+                2025 &copy; All Rights Reserved
               </p>
             </div>
 
@@ -88,7 +89,7 @@ export default function Footer() {
               </a>
             </div>
           </div>
-        </section>
+        </Section>
       </div>
     </footer>
   );

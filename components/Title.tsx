@@ -5,7 +5,7 @@ interface TitleProps {
 export default function Title({ title }: TitleProps) {
   return (
     <div data-title={title}>
-      <h1 className="mb-12 text-5xl">{title}</h1>
+      <h1 className="mb-12 text-5xl leading-none">{title}</h1>
     </div>
   );
 } 

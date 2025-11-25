@@ -2,6 +2,8 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
+import Section from "./Section";
 
 export default function Nav() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -87,19 +89,22 @@ export default function Nav() {
     };
   }, []);
 
+  const navColor = mounted
+    ? theme === "dark"
+      ? "text-foreground"
+      : "text-background"
+    : "";
+
   return (
     <nav
-      className="fixed z-9998 w-full py-6 transition-colors duration-500"
-      style={{
-        background: `linear-gradient(to bottom, var(--background, #000) 0%, transparent 100%)`,
-      }}
+      className={`fixed z-9998 w-full py-6 mix-blend-difference transition-colors duration-500 ${navColor}`}
     >
-      <div className="mx-4 max-w-full md:max-w-7xl xl:mx-auto">
+      <Section>
         <div className="flex justify-between">
           <div className="relative hidden gap-1 overflow-hidden text-xl font-semibold md:flex">
-            <a href="#" className="relative overflow-hidden">
+            <Link href="/" className="relative overflow-hidden">
               &copy; BENNART
-            </a>
+            </Link>
 
             <AnimatePresence mode="wait">
               {activeSection && (
@@ -161,7 +166,7 @@ export default function Nav() {
             </button>
           )}
         </div>
-      </div>
+      </Section>
     </nav>
   );
 }
